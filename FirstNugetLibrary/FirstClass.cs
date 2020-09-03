@@ -13,7 +13,7 @@ namespace FirstNugetLibrary
         /// </summary>
         public FirstClass()
         {
-            
+
         }
 
         /// <summary>
@@ -24,6 +24,16 @@ namespace FirstNugetLibrary
         public void Print(Context context, string message)
         {
             Toast.MakeText(context, message, ToastLength.Short).Show();
+            Test(context);
+        }
+
+        /// <summary>
+        /// A <see cref="FirstClass"/> Test 
+        /// </summary>
+        /// <param name="context">The context.</param>
+        public void Test(Context context)
+        {
+            Toast.MakeText(context, "Success", ToastLength.Short).Show();
         }
 
     }
