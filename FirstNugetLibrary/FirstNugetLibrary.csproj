@@ -1,0 +1,48 @@
+<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFrameworks>MonoAndroid90</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Emre BAYRAKTAR</Authors>
+    <Company>Bayraktar</Company>
+    <Description>First Nuget Library.</Description>
+    <Copyright>2020 Bayraktar</Copyright>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>asssembly_key.pfx</AssemblyOriginatorKeyFile>
+    <PackageTags>Xamarin Android netstandard</PackageTags>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <NeutralLanguage>tr-TR</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/ebayraktar/FirstNugetLibrary</PackageProjectUrl>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
+    <Version>1.0.1</Version>
+    <Product>com.Bayraktar.FirstNugetLibrary</Product>
+    <PackageId>FirstNugetLibrary</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <ApplicationIcon>GREEN.ico</ApplicationIcon>
+    <PackageIcon>HDD.jpg</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Z:\VS2019\Nuget\FirstNugetLibrary\FirstNugetLibrary\FirstNugetLibrary.xml</DocumentationFile>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\emreb\Downloads\HDDScan_v31\HDDScan\HDD.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.7" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+</Project>

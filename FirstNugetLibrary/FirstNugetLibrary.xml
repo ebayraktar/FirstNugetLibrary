@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FirstNugetLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:FirstNugetLibrary.FirstClass">
+            <summary>
+            First Class For Test
+            </summary>
+        </member>
+        <member name="M:FirstNugetLibrary.FirstClass.#ctor">
+            <summary>
+            Test Class
+            </summary>
+        </member>
+        <member name="M:FirstNugetLibrary.FirstClass.Print(Android.Content.Context,System.String)">
+            <summary>
+            Prints the message
+            </summary>
+            <param name="context"></param>
+            <param name="message"></param>
+        </member>
+    </members>
+</doc>
